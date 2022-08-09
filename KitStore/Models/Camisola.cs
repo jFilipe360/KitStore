@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using KitStore.Data.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace KitStore.Models
 {
@@ -13,5 +14,9 @@ namespace KitStore.Models
         public string NomeMarca { get; set; }
 
         public string Equipamento { get; set; }
+
+        public float Preco { get; set; }
+
+        public Liga Liga { get; set; }
     }
 }

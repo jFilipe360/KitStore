@@ -1,4 +1,9 @@
+using KitStore.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Configuração do DbContext
+builder.Services.AddDbContext<AppDBContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
